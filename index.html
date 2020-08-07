@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+    <title>acrossti.me</title>
+    <meta name="description" content="acrosstime, Inc.">  
+    <meta name="author" content="acrosstime, Inc.">
+
+   <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
+
+   <!-- script
+   ================================================== -->
+    <script type="text/javascript">
+        var countdownDate = new Date("Jun 23, 2021 06:23:09").getTime();
+        let countdownFunc = setInterval(function() {
+            let timeleft = countdownDate - new Date().getTime();
+                
+            let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let mins = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+            let secs = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+            // zerofill left
+            days = ("000" + days).slice(-3);
+            hours = ("00" + hours).slice(-2);
+            mins = ("00" + mins).slice(-2);
+            secs = ("00" + secs).slice(-2);
+
+            document.getElementById("days").innerHTML = days + " <sup>days</sup>";
+            document.getElementById("hours").innerHTML = hours + " <sup>hours</sup>";
+            document.getElementById("mins").innerHTML = mins + " <sup>mins</sup>";
+            document.getElementById("secs").innerHTML = secs + " <sup>secs</sup>";
+
+        }, 1000);
+    </script>
+    <script src="js/modernizr.js"></script>
+
+   <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+    <!-- header 
+   ================================================== -->
+   <header>
+
+    <div class="row">
+        <div class="logo">
+            <a href="index.html">acrosstime</a>
+        </div>
+        <div class="logo">
+            <a href="index.html">acrosstime</a>
+        </div> 
+
+            <!-- 
+            <div class="social-links">
+               <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>                
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+            </div> 
+            -->
+    </div> 
+
+   </header> <!-- /header -->   
+
+   <!-- home
+   ================================================== -->
+   <section id="home" class="home-particles">
+
+    <div class="shadow-overlay"></div>
+
+    <div class="content-wrap-table">           
+
+           <div class="main-content-tablecell">
+
+            <div class="row">
+                <div class="col-twelve">
+
+                    <div id="counter">
+                        <div class="half">
+                            <span id="days">000 <sup>days</sup></span> 
+                            <span id="hours">00 <sup>hours</sup></span>
+                        </div>
+                        <div class="half">
+                            <span id="mins">00 <sup>mins</sup></span>
+                            <span id="secs">00 <sup>secs</sup></span>
+                        </div> 
+                    </div>
+
+                        <div class="bottom-text">
+                            <h1>Come with us, across time.</h1>
+                            <p>
+                            Come for the crumpets, stay for the company.
+                            </p>                            
+                        </div>                                                          
+
+                </div> <!-- /twelve --> 
+
+                
+                <div class="scroll-icon">
+                   <p class="scroll-text">Look at this cool icon</p>
+                   <a href="#info" class="smoothscroll">
+                    <div class="mouse"></div>
+                   </a>
+                    <div class="end-top"></div>
+                </div> 
+                <!-- /scroll-icon -->
+            </div> <!-- /row -->  
+
+           </div> <!-- /main-content --> 
+           
+        </div> <!-- /content-wrap -->
+   
+   </section> <!-- /home -->
+
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
